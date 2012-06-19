@@ -1,0 +1,20 @@
+{
+    "id": "ExtBox1-ext-gen9007",
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "postsList",
+        "itemTpl": "{title}\n",
+        "store": "Posts",
+        "designer|userClassName": "posts.List",
+        "designer|userAlias": "postslist"
+    },
+    "customConfigs": [],
+    "designerId": "5d991599-1c18-47cd-aea6-a0fde376a92d",
+    "$viewOrder": 2,
+    "expanded": true
+}

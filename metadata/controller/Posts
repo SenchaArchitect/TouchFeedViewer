@@ -1,0 +1,214 @@
+{
+    "id": "ExtBox1-ext-gen37864",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Post"
+        ],
+        "stores": [
+            "Posts",
+            "Feed",
+            "Feeds"
+        ],
+        "views": [
+            "posts.List",
+            "posts.Story"
+        ],
+        "designer|userClassName": "Posts",
+        "designer|userAlias": "posts"
+    },
+    "customConfigs": [],
+    "designerId": "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen40415",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "postsNav",
+                "selector": "#postsNav",
+                "designer|userClassName": "postsNav"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen61132",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "postsList",
+                "selector": "#postsList",
+                "designer|userClassName": "postsList"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen16370",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "this.loadPostsOnFeedLoad();",
+                    "",
+                    "Ext.getStore('Feed').loadFeed('http://feeds.feedburner.com/blogspot/MKuf');",
+                    "//https://blog.facebook.com/atom.php",
+                    "//http://feeds.feedburner.com/blogspot/MKuf",
+                    "//http://feeds.feedburner.com/SenchaBlog",
+                    ""
+                ],
+                "designer|userClassName": "launch"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function",
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen67381",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    ""
+                ],
+                "designer|userClassName": "init"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function",
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen70705",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadPostsOnFeedLoad",
+                "implHandler": [
+                    "var self = this;",
+                    "",
+                    "Ext.getStore('Feed').on('load', function(store, records){",
+                    "    var feed = records[0],",
+                    "        posts = feed.posts().getData().items,",
+                    "        title = feed.get('title'),",
+                    "        feedsStore = Ext.getStore('Feeds');",
+                    "    ",
+                    "    Ext.getStore('Posts').setData(posts);",
+                    "",
+                    "    self.getPostsList().title = title;",
+                    "    ",
+                    "    if (feedsStore.find('url', feed.get('url')) < 0){",
+                    "        feedsStore.add(feed);",
+                    "    } ",
+                    "});    "
+                ],
+                "designer|userClassName": "loadPostsOnFeedLoad"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen78299",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPostsListActivate",
+                "implHandler": [
+                    "this.getApplication().fireEvent('updateNav');"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "postslist",
+                "designer|userClassName": "onPostsListActivate"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen84221",
+            "type": "applicationaction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onUpdateNav",
+                "implHandler": [
+                    "var self = this;",
+                    "// ugly hack, so that this happens after title is internally set by back state stack",
+                    "Ext.defer(function(){",
+                    "    var title = self.getPostsList().title;",
+                    "    self.getPostsNav().getNavigationBar().setTitle(title);",
+                    "},500);"
+                ],
+                "name": "updateNav",
+                "scope": "this",
+                "designer|userClassName": "onUpdateNav"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen16635",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPostsListItemTap",
+                "implHandler": [
+                    "var story = Ext.create('Feed.view.posts.Story',{",
+                    "    title: record.get('title')",
+                    "});",
+                    "story.setData(record.data);",
+                    "this.getPostsNav().push(story);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "postslist",
+                "designer|userClassName": "onPostsListItemTap"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

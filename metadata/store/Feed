@@ -1,0 +1,85 @@
+{
+    "id": "ExtBox1-ext-gen40332",
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "Feed",
+        "storeId": "Feed",
+        "designer|userClassName": "Feed",
+        "designer|userAlias": "feed"
+    },
+    "customConfigs": [],
+    "designerId": "bca16d92-974d-41c6-b021-ca22bcb31fd8",
+    "$viewOrder": 2,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen40339",
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0",
+                "designer|userClassName": "MyJsonPProxy2"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen40346",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "responseData.feed",
+                        "record": null,
+                        "useSimpleAccessors": null,
+                        "designer|userClassName": "MyJsonReader2"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen24773",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadFeed",
+                "designer|params": [
+                    "feedUrl",
+                    "numPosts"
+                ],
+                "implHandler": [
+                    "console.log('Loading feed');",
+                    "this.load({",
+                    "    params:{",
+                    "        q: feedUrl,",
+                    "        num: numPosts || 20",
+                    "    }",
+                    "});",
+                    ""
+                ],
+                "designer|userClassName": "loadFeed"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

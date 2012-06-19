@@ -1,0 +1,19 @@
+{
+    "id": "ExtBox1-ext-gen17706",
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemTpl": "{title}<br /><p style=\"font-size:10pt\">{description}</p>",
+        "store": "Searches",
+        "designer|userClassName": "feeds.List",
+        "designer|userAlias": "feedslist"
+    },
+    "customConfigs": [],
+    "designerId": "318e0639-d776-41b1-9e23-01fbacaac81d",
+    "$viewOrder": 5,
+    "expanded": true
+}
