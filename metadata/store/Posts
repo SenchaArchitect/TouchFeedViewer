@@ -1,0 +1,83 @@
+{
+    "id": "ExtBox1-ext-gen27667",
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "data": null,
+        "model": "Post",
+        "storeId": "Posts",
+        "designer|userClassName": "Posts",
+        "designer|userAlias": "posts"
+    },
+    "customConfigs": [],
+    "designerId": "f6c25b60-a60b-4ab6-a994-1d34cee875f5",
+    "$viewOrder": 0,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen51729",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loadPosts",
+                "designer|params": [
+                    "feedUrl",
+                    "numPosts"
+                ],
+                "implHandler": [
+                    "this.load({",
+                    "    params:{",
+                    "        q: feedUrl,",
+                    "        num: numPosts || 20",
+                    "    }",
+                    "});",
+                    ""
+                ],
+                "designer|userClassName": "loadPosts"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen52356",
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0",
+                "designer|userClassName": "MyJsonPProxy"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen52664",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "responseData.feed.entries",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "id": "ExtBox1-ext-gen2313",
+    "type": "tabpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "TabPanel",
+        "designer|userAlias": "tabpanel"
+    },
+    "customConfigs": [],
+    "designerId": "8dfa68c3-dcda-46b2-9c70-7c0d6abff151",
+    "$viewOrder": 1,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen2327",
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "postsTab",
+                "layout": "fit",
+                "designer|userClassName": "MyContainer",
+                "title": "Posts",
+                "iconCls": "star"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen32787",
+                    "type": "navigationview",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "postsNav",
+                        "useTitleForBackButtonText": true,
+                        "designer|userClassName": "MyNavigationView"
+                    },
+                    "customConfigs": [],
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen33038",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Post"
+                            },
+                            "customConfigs": [],
+                            "iconCls": "icon-linkedinstance",
+                            "expanded": true,
+                            "masterInstanceId": "ExtBox1-ext-gen9007"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen47980",
+                            "type": "navigationbar",
+                            "reference": {
+                                "name": "navigationBar",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyNavigationBar"
+                            },
+                            "customConfigs": [],
+                            "iconCls": "icon-navbar",
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen48200",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "addButton",
+                                        "ui": "action",
+                                        "iconCls": "add",
+                                        "iconMask": true,
+                                        "text": "",
+                                        "designer|userClassName": "MyButton",
+                                        "align": "right"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen6988",
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "feedsButton",
+                                        "text": "Feeds",
+                                        "designer|userClassName": "MyButton2"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen2335",
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "aboutTab",
+                "layout": "fit",
+                "designer|userClassName": "MyContainer1",
+                "title": "About",
+                "iconCls": "info"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen12885",
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {},
+                    "customConfigs": [],
+                    "iconCls": "icon-linkedinstance",
+                    "expanded": true,
+                    "masterInstanceId": "ExtBox1-ext-gen9289"
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen3477",
+            "type": "tabbar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "designer|userClassName": "MyTabBar"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-tab-bar",
+            "expanded": true
+        }
+    ]
+}

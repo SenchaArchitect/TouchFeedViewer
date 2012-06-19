@@ -1,0 +1,20 @@
+{
+    "id": "ExtBox1-ext-gen9289",
+    "type": "component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": "<p>About page</p>",
+        "styleHtmlContent": true,
+        "tpl": "",
+        "designer|userClassName": "About",
+        "designer|userAlias": "about"
+    },
+    "customConfigs": [],
+    "designerId": "498dd6ec-4628-4484-877a-b7d33e587689",
+    "$viewOrder": 0,
+    "expanded": true
+}
