@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen23901",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,16 +6,32 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "posts.Story",
+        "designer|userAlias": "postsstory",
         "html": null,
         "styleHtmlContent": true,
-        "tpl": "{story}\n",
         "layout": "fit",
-        "scrollable": "vertical",
-        "designer|userClassName": "posts.Story",
-        "designer|userAlias": "postsstory"
+        "scrollable": "vertical"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen23901",
     "designerId": "2a091605-b040-405a-850b-7188c860907c",
-    "$viewOrder": 3,
-    "expanded": true
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "tpl",
+                "implHandler": [
+                    "{story}",
+                    ""
+                ],
+                "designer|displayName": "tpl"
+            },
+            "designerId": "23020e46-1839-4ada-8238-6b094e9cb545"
+        }
+    ]
 }

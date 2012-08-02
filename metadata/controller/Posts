@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen37864",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -7,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Posts",
+        "designer|userAlias": "posts",
         "models": [
             "Post"
         ],
@@ -18,17 +19,12 @@
         "views": [
             "posts.List",
             "posts.Story"
-        ],
-        "designer|userClassName": "Posts",
-        "designer|userAlias": "posts"
+        ]
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen37864",
     "designerId": "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
-    "$viewOrder": 0,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen40415",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -36,15 +32,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "postsNav",
                 "ref": "postsNav",
-                "selector": "#postsNav",
-                "designer|userClassName": "postsNav"
+                "selector": "#postsNav"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "1d294d9c-f2b2-4437-b1c8-6a3617e621e9"
         },
         {
-            "id": "ExtBox1-ext-gen61132",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -52,15 +46,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "postsList",
                 "ref": "postsList",
-                "selector": "#postsList",
-                "designer|userClassName": "postsList"
+                "selector": "#postsList"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9d4292e3-4cc8-4636-a8ae-4963d5e2ff9b"
         },
         {
-            "id": "ExtBox1-ext-gen16370",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -68,6 +60,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
                     "this.loadPostsOnFeedLoad();",
@@ -77,15 +70,11 @@
                     "//http://feeds.feedburner.com/blogspot/MKuf",
                     "//http://feeds.feedburner.com/SenchaBlog",
                     ""
-                ],
-                "designer|userClassName": "launch"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "ba81473e-8677-415d-8024-270befc0c87c"
         },
         {
-            "id": "ExtBox1-ext-gen67381",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -93,21 +82,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
                 ],
                 "implHandler": [
                     ""
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "463fc41c-12e9-48c0-8ea1-060d9480a9d7"
         },
         {
-            "id": "ExtBox1-ext-gen70705",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -115,6 +101,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loadPostsOnFeedLoad",
                 "fn": "loadPostsOnFeedLoad",
                 "implHandler": [
                     "var self = this;",
@@ -133,14 +120,11 @@
                     "        feedsStore.add(feed);",
                     "    } ",
                     "});    "
-                ],
-                "designer|userClassName": "loadPostsOnFeedLoad"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4257c28b-bc15-4254-91cd-28cfbe4ff4c4"
         },
         {
-            "id": "ExtBox1-ext-gen78299",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -148,20 +132,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onPostsListActivate",
                 "fn": "onPostsListActivate",
                 "implHandler": [
                     "this.getApplication().fireEvent('updateNav');"
                 ],
                 "name": "activate",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "postslist",
-                "designer|userClassName": "onPostsListActivate"
+                "designer|controlQuery": "postslist"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "09a681bf-e595-4ec4-9c5a-7f55ebe10c93"
         },
         {
-            "id": "ExtBox1-ext-gen84221",
             "type": "applicationaction",
             "reference": {
                 "name": "items",
@@ -169,6 +151,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onUpdateNav",
                 "fn": "onUpdateNav",
                 "implHandler": [
                     "var self = this;",
@@ -179,14 +162,11 @@
                     "},500);"
                 ],
                 "name": "updateNav",
-                "scope": "this",
-                "designer|userClassName": "onUpdateNav"
+                "scope": "this"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "a5a6ba56-e7af-4b35-9b35-c56812aa4e48"
         },
         {
-            "id": "ExtBox1-ext-gen16635",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -194,6 +174,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onPostsListItemTap",
                 "fn": "onPostsListItemTap",
                 "implHandler": [
                     "var story = Ext.create('Feed.view.posts.Story',{",
@@ -204,11 +185,9 @@
                 ],
                 "name": "itemtap",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "postslist",
-                "designer|userClassName": "onPostsListItemTap"
+                "designer|controlQuery": "postslist"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "a6fc06e1-c607-4d4b-ae9e-ab88ecb2fc93"
         }
     ]
 }

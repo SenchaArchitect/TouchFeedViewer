@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9007",
     "type": "list",
     "reference": {
         "name": "items",
@@ -7,14 +6,30 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "postsList",
-        "itemTpl": "{title}\n",
-        "store": "Posts",
         "designer|userClassName": "posts.List",
-        "designer|userAlias": "postslist"
+        "designer|userAlias": "postslist",
+        "id": "postsList",
+        "store": "Posts"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen9007",
     "designerId": "5d991599-1c18-47cd-aea6-a0fde376a92d",
-    "$viewOrder": 2,
-    "expanded": true
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "{title}",
+                    ""
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "efcce8a1-26b6-4f80-b8d8-d60c019dad31"
+        }
+    ]
 }

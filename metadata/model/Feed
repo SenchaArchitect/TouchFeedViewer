@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen42212",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -10,13 +9,10 @@
         "designer|userClassName": "Feed",
         "designer|userAlias": "feed"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen42212",
     "designerId": "56645fcf-b8ce-42ee-a55d-84138aaed06c",
-    "$viewOrder": 2,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen42446",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -24,15 +20,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField7",
                 "mapping": "feedUrl",
-                "name": "url",
-                "designer|userClassName": "MyField7"
+                "name": "url"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "6e7041db-6c74-4bd0-bddb-40ad72460741"
         },
         {
-            "id": "ExtBox1-ext-gen42610",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -40,14 +34,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField8"
+                "designer|userClassName": "MyField8",
+                "name": "title"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9db658ff-4b2d-4c04-8f8f-ab5f1590b2d8"
         },
         {
-            "id": "ExtBox1-ext-gen42727",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -55,14 +47,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "link",
-                "designer|userClassName": "MyField9"
+                "designer|userClassName": "MyField9",
+                "name": "link"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "fd42fac6-fbe0-4fba-a1c4-3a2619637e38"
         },
         {
-            "id": "ExtBox1-ext-gen42847",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -70,14 +60,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "author",
-                "designer|userClassName": "MyField10"
+                "designer|userClassName": "MyField10",
+                "name": "author"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "27936281-bd83-47d1-9de0-aba474dc7412"
         },
         {
-            "id": "ExtBox1-ext-gen42970",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -85,14 +73,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "designer|userClassName": "MyField11"
+                "designer|userClassName": "MyField11",
+                "name": "description"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4d54db1c-1b2f-4084-8338-99a475328b2a"
         },
         {
-            "id": "ExtBox1-ext-gen62381",
             "type": "hasmanyassociation",
             "reference": {
                 "name": "hasMany",
@@ -100,15 +86,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyHasManyAssociation",
                 "associationKey": "entries",
                 "model": "Post",
                 "filterProperty": null,
                 "name": "posts",
-                "store": null,
-                "designer|userClassName": "MyHasManyAssociation"
+                "store": null
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "1cb1d437-5c75-4d19-a6e2-efb3cd570c7f"
         }
     ]
 }

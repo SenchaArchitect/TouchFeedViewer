@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen40332",
     "type": "jsonpstore",
     "reference": {
         "name": "items",
@@ -7,19 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Feed",
+        "designer|userAlias": "feed",
         "autoLoad": false,
         "model": "Feed",
-        "storeId": "Feed",
-        "designer|userClassName": "Feed",
-        "designer|userAlias": "feed"
+        "storeId": "Feed"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen40332",
     "designerId": "bca16d92-974d-41c6-b021-ca22bcb31fd8",
-    "$viewOrder": 2,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen40339",
             "type": "jsonpproxy",
             "reference": {
                 "name": "proxy",
@@ -27,14 +23,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0",
-                "designer|userClassName": "MyJsonPProxy2"
+                "designer|userClassName": "MyJsonPProxy2",
+                "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "cb3f6054-74a2-4508-8d75-942e45c98035",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen40346",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -42,18 +36,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyJsonReader2",
                         "rootProperty": "responseData.feed",
                         "record": null,
-                        "useSimpleAccessors": null,
-                        "designer|userClassName": "MyJsonReader2"
+                        "useSimpleAccessors": null
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "107cd083-db99-4d66-91e4-5cad0035de81"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen24773",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -61,6 +53,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loadFeed",
                 "fn": "loadFeed",
                 "designer|params": [
                     "feedUrl",
@@ -75,11 +68,9 @@
                     "    }",
                     "});",
                     ""
-                ],
-                "designer|userClassName": "loadFeed"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "05f9cef4-2a83-428d-8b10-e2f8ca55bddf"
         }
     ]
 }

@@ -16,6 +16,7 @@
 Ext.define('Feed.model.Post', {
     extend: 'Ext.data.Model',
     alias: 'model.post',
+
     config: {
         fields: [
             {

@@ -24,7 +24,8 @@ Ext.define('Feed.view.posts.Story', {
         },
         scrollable: 'vertical',
         tpl: [
-            '{story}'
+            '{story}',
+            ''
         ]
     }
 

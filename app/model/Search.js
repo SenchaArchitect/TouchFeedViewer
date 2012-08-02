@@ -16,6 +16,7 @@
 Ext.define('Feed.model.Search', {
     extend: 'Ext.data.Model',
     alias: 'model.search',
+
     config: {
         fields: [
             {

@@ -1,22 +1,23 @@
 {
     "name": "feed",
     "settings": {
-        "urlPrefix": "",
+        "urlPrefix": "http://localhost/Code/sample-apps/TouchFeedViewer",
         "spacesToIndent": 4,
-        "codeGenFormat": "Class",
         "exportPath": "",
-        "extPath": "http://extjs.cachefly.net/touch/sencha-touch-2.0.1/",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
-        "lineEnding": "LF",
         "instantiateStore": true,
-        "genTimestamps": false,
         "saveOnDeploy": false,
-        "appName": "MyApp",
-        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+        "appName": "MyApp"
     },
     "xdsVersion": "2.0.0",
-    "xdsBuild": "442",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
     "framework": "touch20",
     "topInstanceFileMap": {
         "8dfa68c3-dcda-46b2-9c70-7c0d6abff151": {
@@ -138,13 +139,43 @@
                 "app/store/Feeds.js"
             ],
             "className": "Feeds"
+        },
+        "3edbb06a-2e35-4364-9f36-f33c07600ac4": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
         }
     },
-    "expandedState": {
-        "data": true,
-        "model": false,
-        "component": false,
-        "controller": true,
-        "resource": true
+    "viewOrderMap": {
+        "view": [
+            "498dd6ec-4628-4484-877a-b7d33e587689",
+            "5d991599-1c18-47cd-aea6-a0fde376a92d",
+            "8dfa68c3-dcda-46b2-9c70-7c0d6abff151",
+            "bbf9d344-a904-48fc-9751-b7d983fadc22",
+            "318e0639-d776-41b1-9e23-01fbacaac81d",
+            "2a091605-b040-405a-850b-7188c860907c"
+        ],
+        "store": [
+            "f6c25b60-a60b-4ab6-a994-1d34cee875f5",
+            "836a9d83-2905-4366-829b-fae819f43a55",
+            "bca16d92-974d-41c6-b021-ca22bcb31fd8",
+            "9cd5d50c-3d15-48ba-a903-a64be6a6ba8f"
+        ],
+        "controller": [
+            "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
+            "4213b342-3f4d-4d3f-9046-05c69ff3af7a"
+        ],
+        "model": [
+            "c0b797e7-eb24-41b3-bdb9-8bdb6995dc99",
+            "8a2b9bc8-ddb5-41e5-87ad-774df4bf3bf5",
+            "56645fcf-b8ce-42ee-a55d-84138aaed06c"
+        ],
+        "resource": [
+            "3edbb06a-2e35-4364-9f36-f33c07600ac4"
+        ],
+        "app": [
+            "application"
+        ]
     }
 }

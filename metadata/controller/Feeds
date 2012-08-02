@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen17261",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -7,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Feeds",
+        "designer|userAlias": "feeds",
         "models": [
             "Search"
         ],
@@ -17,17 +18,12 @@
         "views": [
             "feeds.Add",
             "feeds.List"
-        ],
-        "designer|userClassName": "Feeds",
-        "designer|userAlias": "feeds"
+        ]
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen17261",
     "designerId": "4213b342-3f4d-4d3f-9046-05c69ff3af7a",
-    "$viewOrder": 1,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen21057",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -35,15 +31,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "doneButton",
                 "ref": "doneButton",
-                "selector": "#doneButton",
-                "designer|userClassName": "doneButton"
+                "selector": "#doneButton"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "56b47f9d-3034-4cc4-9ca4-125e686039fa"
         },
         {
-            "id": "ExtBox1-ext-gen21236",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -51,15 +45,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "urlField",
                 "ref": "urlField",
-                "selector": "#urlField",
-                "designer|userClassName": "urlField"
+                "selector": "#urlField"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "d3da9e79-9b45-4d58-a449-a70f9ec351ab"
         },
         {
-            "id": "ExtBox1-ext-gen21420",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -67,15 +59,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "searchField",
                 "ref": "searchField",
-                "selector": "#searchField",
-                "designer|userClassName": "searchField"
+                "selector": "#searchField"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "49c8f25b-848c-4a7c-a339-959b0186be31"
         },
         {
-            "id": "ExtBox1-ext-gen21761",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -83,6 +73,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onButtonTap",
                 "fn": "onButtonTap",
                 "implHandler": [
                     "",
@@ -113,14 +104,11 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "feedsadd button",
-                "designer|userClassName": "onButtonTap"
+                "designer|controlQuery": "feedsadd button"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "6e895983-9321-4082-afaa-b99d24a600ff"
         },
         {
-            "id": "ExtBox1-ext-gen27910",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -128,15 +116,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "postsNav",
                 "ref": "postsNav",
-                "selector": "#postsNav",
-                "designer|userClassName": "postsNav"
+                "selector": "#postsNav"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "ec7c1dea-7c61-4cfc-9e79-c68c82f097e3"
         },
         {
-            "id": "ExtBox1-ext-gen32783",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -144,6 +130,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onFeedsListItemTap",
                 "fn": "onFeedsListItemTap",
                 "implHandler": [
                     "Ext.getStore('Feed').loadFeed(record.data.url);",
@@ -153,14 +140,11 @@
                 ],
                 "name": "itemtap",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "feedslist",
-                "designer|userClassName": "onFeedsListItemTap"
+                "designer|controlQuery": "feedslist"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "d3fb453c-1088-49b7-a6e8-eab77b0a90e1"
         },
         {
-            "id": "ExtBox1-ext-gen16075",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -168,6 +152,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onFeedsListItemSwipe",
                 "fn": "onFeedsListItemSwipe",
                 "implHandler": [
                     "Ext.Msg.confirm(\"Remove feed\", [\"Are you sure you want to remove \",",
@@ -181,14 +166,11 @@
                 ],
                 "name": "itemswipe",
                 "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "feedslist",
-                "designer|userClassName": "onFeedsListItemSwipe"
+                "designer|controlQuery": "feedslist"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "287f9232-46c7-4e16-9d77-e24672c0f52c"
         },
         {
-            "id": "ExtBox1-ext-gen55388",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -196,15 +178,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "addButton",
                 "ref": "addButton",
-                "selector": "#addButton",
-                "designer|userClassName": "addButton"
+                "selector": "#addButton"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e29e8306-a726-4e9e-98cd-3490ea6ed974"
         },
         {
-            "id": "ExtBox1-ext-gen8534",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -212,15 +192,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "feedsButton",
                 "ref": "feedsButton",
-                "selector": "#feedsButton",
-                "designer|userClassName": "feedsButton"
+                "selector": "#feedsButton"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "53a930d9-090b-4af9-820b-2b162d24131c"
         },
         {
-            "id": "ExtBox1-ext-gen53074",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -228,6 +206,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onAddFeedButtonTap",
                 "fn": "onAddFeedButtonTap",
                 "implHandler": [
                     "var addFeed = Ext.create('Feed.view.feeds.Add', {",
@@ -238,14 +217,11 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#addButton",
-                "designer|userClassName": "onAddFeedButtonTap"
+                "designer|controlQuery": "#addButton"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "a366c568-0198-4339-974a-81d8fcf1f7a9"
         },
         {
-            "id": "ExtBox1-ext-gen10004",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -253,6 +229,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onViewFeedsButtonTap",
                 "fn": "onViewFeedsButtonTap",
                 "implHandler": [
                     "var feedsList = Ext.create('Feed.view.feeds.List',{",
@@ -263,14 +240,11 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#feedsButton",
-                "designer|userClassName": "onViewFeedsButtonTap"
+                "designer|controlQuery": "#feedsButton"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "48ddee33-3994-45f0-b3cd-58377928f6db"
         },
         {
-            "id": "ExtBox1-ext-gen60441",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -278,6 +252,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onNavigationviewActiveItemChange",
                 "fn": "onNavigationviewActiveItemChange",
                 "implHandler": [
                     "if (value === this.getPostsList()){",
@@ -292,14 +267,11 @@
                 ],
                 "name": "activeitemchange",
                 "designer|targetType": "Ext.navigation.View",
-                "designer|controlQuery": "navigationview",
-                "designer|userClassName": "onNavigationviewActiveItemChange"
+                "designer|controlQuery": "navigationview"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9e3adc67-e133-4b1f-9ff3-62fbee45af6d"
         },
         {
-            "id": "ExtBox1-ext-gen18601",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -307,12 +279,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "postsList",
                 "ref": "postsList",
-                "selector": "#postsList",
-                "designer|userClassName": "postsList"
+                "selector": "#postsList"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e3db05a5-abd5-4005-9262-bbf595eab754"
         }
     ]
 }

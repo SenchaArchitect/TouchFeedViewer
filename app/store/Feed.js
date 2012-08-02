@@ -16,6 +16,7 @@
 Ext.define('Feed.store.Feed', {
     extend: 'Ext.data.Store',
     alias: 'store.feed',
+
     requires: [
         'Feed.model.Feed'
     ],

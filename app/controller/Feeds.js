@@ -16,6 +16,7 @@
 Ext.define('Feed.controller.Feeds', {
     extend: 'Ext.app.Controller',
     alias: 'controller.feeds',
+
     config: {
         models: [
             'Search'

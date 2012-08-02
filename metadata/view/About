@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9289",
     "type": "component",
     "reference": {
         "name": "items",
@@ -7,14 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "html": "<p>About page</p>",
-        "styleHtmlContent": true,
-        "tpl": "",
         "designer|userClassName": "About",
-        "designer|userAlias": "about"
+        "designer|userAlias": "about",
+        "html": "<p>About page</p>",
+        "styleHtmlContent": true
     },
-    "customConfigs": [],
-    "designerId": "498dd6ec-4628-4484-877a-b7d33e587689",
-    "$viewOrder": 0,
-    "expanded": true
+    "id": "ExtBox1-ext-gen9289",
+    "designerId": "498dd6ec-4628-4484-877a-b7d33e587689"
 }

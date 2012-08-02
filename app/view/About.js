@@ -19,10 +19,7 @@ Ext.define('Feed.view.About', {
 
     config: {
         html: '<p>About page</p>',
-        styleHtmlContent: true,
-        tpl: [
-            ''
-        ]
+        styleHtmlContent: true
     }
 
 });

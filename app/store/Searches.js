@@ -16,6 +16,7 @@
 Ext.define('Feed.store.Searches', {
     extend: 'Ext.data.Store',
     alias: 'store.search',
+
     requires: [
         'Feed.model.Search'
     ],

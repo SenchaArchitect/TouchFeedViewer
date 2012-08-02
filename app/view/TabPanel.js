@@ -16,6 +16,7 @@
 Ext.define('Feed.view.TabPanel', {
     extend: 'Ext.tab.Panel',
     alias: 'widget.tabpanel',
+
     requires: [
         'Feed.view.posts.List',
         'Feed.view.About'
@@ -25,12 +26,12 @@ Ext.define('Feed.view.TabPanel', {
         items: [
             {
                 xtype: 'container',
+                title: 'Posts',
+                iconCls: 'star',
                 id: 'postsTab',
                 layout: {
                     type: 'fit'
                 },
-                title: 'Posts',
-                iconCls: 'star',
                 items: [
                     {
                         xtype: 'navigationview',
@@ -46,12 +47,12 @@ Ext.define('Feed.view.TabPanel', {
                             items: [
                                 {
                                     xtype: 'button',
+                                    align: 'right',
                                     id: 'addButton',
                                     ui: 'action',
                                     iconCls: 'add',
                                     iconMask: true,
-                                    text: '',
-                                    align: 'right'
+                                    text: ''
                                 },
                                 {
                                     xtype: 'button',
@@ -65,12 +66,12 @@ Ext.define('Feed.view.TabPanel', {
             },
             {
                 xtype: 'container',
+                title: 'About',
+                iconCls: 'info',
                 id: 'aboutTab',
                 layout: {
                     type: 'fit'
                 },
-                title: 'About',
-                iconCls: 'info',
                 items: [
                     {
                         xtype: 'about'

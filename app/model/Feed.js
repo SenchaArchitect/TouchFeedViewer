@@ -16,9 +16,11 @@
 Ext.define('Feed.model.Feed', {
     extend: 'Ext.data.Model',
     alias: 'model.feed',
+
     uses: [
         'Feed.model.Post'
     ],
+
     config: {
         fields: [
             {

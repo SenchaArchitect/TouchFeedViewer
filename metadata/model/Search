@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen4026",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -10,13 +9,10 @@
         "designer|userClassName": "Search",
         "designer|userAlias": "search"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen4026",
     "designerId": "8a2b9bc8-ddb5-41e5-87ad-774df4bf3bf5",
-    "$viewOrder": 1,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen4280",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -24,14 +20,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField4"
+                "designer|userClassName": "MyField4",
+                "name": "title"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "146c7e18-848c-481d-9396-d204740bbe1d"
         },
         {
-            "id": "ExtBox1-ext-gen4394",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -39,14 +33,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "url",
-                "designer|userClassName": "MyField5"
+                "designer|userClassName": "MyField5",
+                "name": "url"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "05a8608d-1b9d-43ed-9538-da4f7151714c"
         },
         {
-            "id": "ExtBox1-ext-gen4756",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -54,12 +46,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField6",
                 "mapping": "contentSnippet",
-                "name": "description",
-                "designer|userClassName": "MyField6"
+                "name": "description"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "ae14baea-51d3-490b-9cfb-4ba8fa50bd59"
         }
     ]
 }

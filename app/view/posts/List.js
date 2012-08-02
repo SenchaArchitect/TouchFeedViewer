@@ -21,7 +21,8 @@ Ext.define('Feed.view.posts.List', {
         id: 'postsList',
         store: 'Posts',
         itemTpl: [
-            '{title}'
+            '{title}',
+            ''
         ]
     }
 

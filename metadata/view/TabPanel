@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen2313",
     "type": "tabpanel",
     "reference": {
         "name": "items",
@@ -7,17 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
         "designer|userClassName": "TabPanel",
-        "designer|userAlias": "tabpanel"
+        "designer|userAlias": "tabpanel",
+        "designer|initialView": true
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen2313",
     "designerId": "8dfa68c3-dcda-46b2-9c70-7c0d6abff151",
-    "$viewOrder": 1,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen2327",
             "type": "container",
             "reference": {
                 "name": "items",
@@ -25,17 +21,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": "postsTab",
-                "layout": "fit",
-                "designer|userClassName": "MyContainer",
                 "title": "Posts",
-                "iconCls": "star"
+                "iconCls": "star",
+                "designer|userClassName": "MyContainer",
+                "id": "postsTab",
+                "layout": "fit"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "712a7b61-24d6-49af-9dc7-d3448f1ae691",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen32787",
                     "type": "navigationview",
                     "reference": {
                         "name": "items",
@@ -43,15 +37,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyNavigationView",
                         "id": "postsNav",
-                        "useTitleForBackButtonText": true,
-                        "designer|userClassName": "MyNavigationView"
+                        "useTitleForBackButtonText": true
                     },
-                    "customConfigs": [],
-                    "expanded": true,
+                    "designerId": "aae7777f-e28c-44d5-9fc8-d2dd43221ca2",
                     "cn": [
                         {
-                            "id": "ExtBox1-ext-gen33038",
                             "type": "linkedinstance",
                             "reference": {
                                 "name": "items",
@@ -61,13 +53,10 @@
                             "userConfig": {
                                 "title": "Post"
                             },
-                            "customConfigs": [],
-                            "iconCls": "icon-linkedinstance",
-                            "expanded": true,
+                            "designerId": "3e3d5361-f181-4a58-9a8a-cd211b911b0d",
                             "masterInstanceId": "ExtBox1-ext-gen9007"
                         },
                         {
-                            "id": "ExtBox1-ext-gen47980",
                             "type": "navigationbar",
                             "reference": {
                                 "name": "navigationBar",
@@ -77,12 +66,9 @@
                             "userConfig": {
                                 "designer|userClassName": "MyNavigationBar"
                             },
-                            "customConfigs": [],
-                            "iconCls": "icon-navbar",
-                            "expanded": true,
+                            "designerId": "0315c29b-a6d7-42e1-a94c-f8ed83873848",
                             "cn": [
                                 {
-                                    "id": "ExtBox1-ext-gen48200",
                                     "type": "button",
                                     "reference": {
                                         "name": "items",
@@ -90,19 +76,17 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "align": "right",
+                                        "designer|userClassName": "MyButton",
                                         "id": "addButton",
                                         "ui": "action",
                                         "iconCls": "add",
                                         "iconMask": true,
-                                        "text": "",
-                                        "designer|userClassName": "MyButton",
-                                        "align": "right"
+                                        "text": ""
                                     },
-                                    "customConfigs": [],
-                                    "expanded": true
+                                    "designerId": "726d3be0-260a-4d99-95f2-d423d869d515"
                                 },
                                 {
-                                    "id": "ExtBox1-ext-gen6988",
                                     "type": "button",
                                     "reference": {
                                         "name": "items",
@@ -110,12 +94,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "designer|userClassName": "MyButton2",
                                         "id": "feedsButton",
-                                        "text": "Feeds",
-                                        "designer|userClassName": "MyButton2"
+                                        "text": "Feeds"
                                     },
-                                    "customConfigs": [],
-                                    "expanded": true
+                                    "designerId": "2ce68ccf-74aa-4a9d-a84b-cf5a5bd1e3d2"
                                 }
                             ]
                         }
@@ -124,7 +107,6 @@
             ]
         },
         {
-            "id": "ExtBox1-ext-gen2335",
             "type": "container",
             "reference": {
                 "name": "items",
@@ -132,33 +114,27 @@
             },
             "codeClass": null,
             "userConfig": {
-                "id": "aboutTab",
-                "layout": "fit",
-                "designer|userClassName": "MyContainer1",
                 "title": "About",
-                "iconCls": "info"
+                "iconCls": "info",
+                "designer|userClassName": "MyContainer1",
+                "id": "aboutTab",
+                "layout": "fit"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "8ff1d34a-5fd6-4a95-b78b-05741e6fdbb1",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen12885",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
-                    "expanded": true,
+                    "designerId": "829d069d-ba63-4f14-abc0-7db9e260878b",
                     "masterInstanceId": "ExtBox1-ext-gen9289"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen3477",
             "type": "tabbar",
             "reference": {
                 "name": "tabBar",
@@ -166,12 +142,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "docked": "bottom",
-                "designer|userClassName": "MyTabBar"
+                "designer|userClassName": "MyTabBar",
+                "docked": "bottom"
             },
-            "customConfigs": [],
-            "iconCls": "icon-tab-bar",
-            "expanded": true
+            "designerId": "ec756633-9d60-4d51-bbf5-a5b0d2cf2341"
         }
     ]
 }

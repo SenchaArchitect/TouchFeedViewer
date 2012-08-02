@@ -59,12 +59,12 @@ Ext.define('Feed.view.feeds.Add', {
                     },
                     {
                         xtype: 'button',
+                        flex: 1,
                         height: 40,
                         id: 'doneButton',
                         ui: 'confirm',
                         width: 100,
-                        text: 'Done',
-                        flex: 1
+                        text: 'Done'
                     },
                     {
                         xtype: 'spacer'

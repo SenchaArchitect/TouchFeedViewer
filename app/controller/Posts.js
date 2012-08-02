@@ -16,6 +16,7 @@
 Ext.define('Feed.controller.Posts', {
     extend: 'Ext.app.Controller',
     alias: 'controller.posts',
+
     config: {
         models: [
             'Post'
@@ -67,10 +68,9 @@ Ext.define('Feed.controller.Posts', {
 
     init: function(application) {
 
-        this.getApplication().on([
+        application.on([
         { event: 'updateNav', fn: this.onUpdateNav, scope: this }
         ]);
-
     },
 
     loadPostsOnFeedLoad: function() {
