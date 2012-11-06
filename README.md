@@ -23,3 +23,7 @@ Third party API:
 * [Google Feed API](https://developers.google.com/feed/v1/jsondevguide)
 
 
+###Project archives:
+
+[TouchFeedViewer-670.xda (build: 670)](https://github.com/downloads/SenchaArchitect/TouchFeedViewer/TouchFeedViewer-670.xda)
+
