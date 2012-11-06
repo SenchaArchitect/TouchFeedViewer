@@ -8,7 +8,6 @@
     "userConfig": {
         "designer|userClassName": "Feed",
         "designer|userAlias": "feed",
-        "autoLoad": false,
         "model": "Feed",
         "storeId": "Feed"
     },

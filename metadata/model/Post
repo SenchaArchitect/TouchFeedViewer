@@ -47,8 +47,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField2",
-                "mapping": "content",
-                "name": "story"
+                "name": "story",
+                "mapping": "content"
             },
             "designerId": "aedb1714-1ea2-4fdd-9398-05f5a07ff0bd"
         },
@@ -61,8 +61,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField3",
-                "mapping": "publishedDate",
                 "name": "date",
+                "mapping": "publishedDate",
                 "type": "date"
             },
             "designerId": "3ed29110-3a22-4137-b0e7-3ef1ccc3a6e3"

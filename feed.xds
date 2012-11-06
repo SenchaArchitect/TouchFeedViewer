@@ -4,6 +4,7 @@
         "urlPrefix": "http://localhost/Code/sample-apps/TouchFeedViewer",
         "spacesToIndent": 4,
         "exportPath": "",
+        "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,
         "cacheBust": false,
@@ -14,11 +15,11 @@
         "saveOnDeploy": false,
         "appName": "MyApp"
     },
-    "xdsVersion": "2.0.0",
-    "xdsBuild": 0,
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 670,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000495,
-    "framework": "touch20",
+    "upgradeVersion": 210000000498,
+    "framework": "touch21",
     "topInstanceFileMap": {
         "8dfa68c3-dcda-46b2-9c70-7c0d6abff151": {
             "paths": [
@@ -140,7 +141,7 @@
             ],
             "className": "Feeds"
         },
-        "3edbb06a-2e35-4364-9f36-f33c07600ac4": {
+        "8b3b2dcd-9188-4f77-89e1-a0e67bafdea2": {
             "paths": [
                 "metadata/resource/Library"
             ],
@@ -172,7 +173,7 @@
             "56645fcf-b8ce-42ee-a55d-84138aaed06c"
         ],
         "resource": [
-            "3edbb06a-2e35-4364-9f36-f33c07600ac4"
+            "8b3b2dcd-9188-4f77-89e1-a0e67bafdea2"
         ],
         "app": [
             "application"

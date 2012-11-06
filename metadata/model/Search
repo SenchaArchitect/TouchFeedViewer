@@ -47,8 +47,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField6",
-                "mapping": "contentSnippet",
-                "name": "description"
+                "name": "description",
+                "mapping": "contentSnippet"
             },
             "designerId": "ae14baea-51d3-490b-9cfb-4ba8fa50bd59"
         }
