@@ -21,8 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField7",
-                "mapping": "feedUrl",
-                "name": "url"
+                "name": "url",
+                "mapping": "feedUrl"
             },
             "designerId": "6e7041db-6c74-4bd0-bddb-40ad72460741"
         },
