@@ -1,5 +1,5 @@
 {
-    "type": "datamodel",
+    "type": "Ext.data.Model",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,85 +9,84 @@
         "designer|userClassName": "Feed",
         "designer|userAlias": "feed"
     },
-    "id": "ExtBox1-ext-gen42212",
     "designerId": "56645fcf-b8ce-42ee-a55d-84138aaed06c",
     "cn": [
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField7",
+                "mapping": "feedUrl",
                 "name": "url",
-                "mapping": "feedUrl"
+                "designer|userClassName": "MyField7"
             },
             "designerId": "6e7041db-6c74-4bd0-bddb-40ad72460741"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField8",
-                "name": "title"
+                "name": "title",
+                "designer|userClassName": "MyField8"
             },
             "designerId": "9db658ff-4b2d-4c04-8f8f-ab5f1590b2d8"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField9",
-                "name": "link"
+                "name": "link",
+                "designer|userClassName": "MyField9"
             },
             "designerId": "fd42fac6-fbe0-4fba-a1c4-3a2619637e38"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField10",
-                "name": "author"
+                "name": "author",
+                "designer|userClassName": "MyField10"
             },
             "designerId": "27936281-bd83-47d1-9de0-aba474dc7412"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField11",
-                "name": "description"
+                "name": "description",
+                "designer|userClassName": "MyField11"
             },
             "designerId": "4d54db1c-1b2f-4084-8338-99a475328b2a"
         },
         {
-            "type": "hasmanyassociation",
+            "type": "Ext.data.association.HasMany",
             "reference": {
                 "name": "hasMany",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyHasManyAssociation",
                 "associationKey": "entries",
+                "designer|userClassName": "MyHasManyAssociation",
                 "model": "Post",
                 "filterProperty": null,
                 "name": "posts",

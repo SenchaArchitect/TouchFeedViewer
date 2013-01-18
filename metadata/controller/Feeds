@@ -1,13 +1,11 @@
 {
-    "type": "controller",
+    "type": "Ext.app.Controller",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Feeds",
-        "designer|userAlias": "feeds",
         "models": [
             "Search"
         ],
@@ -18,9 +16,10 @@
         "views": [
             "feeds.Add",
             "feeds.List"
-        ]
+        ],
+        "designer|userClassName": "Feeds",
+        "designer|userAlias": "feeds"
     },
-    "id": "ExtBox1-ext-gen17261",
     "designerId": "4213b342-3f4d-4d3f-9046-05c69ff3af7a",
     "cn": [
         {

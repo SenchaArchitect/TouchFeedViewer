@@ -1,5 +1,5 @@
 {
-    "type": "datamodel",
+    "type": "Ext.data.Model",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,61 +9,60 @@
         "designer|userClassName": "Post",
         "designer|userAlias": "post"
     },
-    "id": "ExtBox1-ext-gen27214",
     "designerId": "c0b797e7-eb24-41b3-bdb9-8bdb6995dc99",
     "cn": [
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField",
-                "name": "title"
+                "name": "title",
+                "designer|userClassName": "MyField"
             },
             "designerId": "d5a2e48a-6fd3-4ceb-a782-938614b5a433"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField1",
-                "name": "author"
+                "name": "author",
+                "designer|userClassName": "MyField1"
             },
             "designerId": "44fce92c-5629-4347-9aa1-3c0885a02706"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField2",
+                "mapping": "content",
                 "name": "story",
-                "mapping": "content"
+                "designer|userClassName": "MyField2"
             },
             "designerId": "aedb1714-1ea2-4fdd-9398-05f5a07ff0bd"
         },
         {
-            "type": "datafield",
+            "type": "Ext.data.Field",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField3",
-                "name": "date",
                 "mapping": "publishedDate",
-                "type": "date"
+                "name": "date",
+                "type": "date",
+                "designer|userClassName": "MyField3"
             },
             "designerId": "3ed29110-3a22-4137-b0e7-3ef1ccc3a6e3"
         }

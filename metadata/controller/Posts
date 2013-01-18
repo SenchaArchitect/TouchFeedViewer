@@ -1,13 +1,11 @@
 {
-    "type": "controller",
+    "type": "Ext.app.Controller",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Posts",
-        "designer|userAlias": "posts",
         "models": [
             "Post"
         ],
@@ -19,9 +17,10 @@
         "views": [
             "posts.List",
             "posts.Story"
-        ]
+        ],
+        "designer|userClassName": "Posts",
+        "designer|userAlias": "posts"
     },
-    "id": "ExtBox1-ext-gen37864",
     "designerId": "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
     "cn": [
         {
@@ -106,20 +105,27 @@
                 "implHandler": [
                     "var self = this;",
                     "",
-                    "Ext.getStore('Feed').on('load', function(store, records){",
+                    "Ext.getStore('Feed').on('load', function(store, records) {",
                     "    var feed = records[0],",
-                    "        posts = feed.posts().getData().items,",
-                    "        title = feed.get('title'),",
-                    "        feedsStore = Ext.getStore('Feeds');",
-                    "    ",
-                    "    Ext.getStore('Posts').setData(posts);",
+                    "        posts, title, feedsStore;",
                     "",
-                    "    self.getPostsList().title = title;",
-                    "    ",
-                    "    if (feedsStore.find('url', feed.get('url')) < 0){",
-                    "        feedsStore.add(feed);",
-                    "    } ",
-                    "});    "
+                    "    if (feed) {",
+                    "        posts = feed.posts().getData().items;",
+                    "        title = feed.get('title');",
+                    "        feedsStore = Ext.getStore('Feeds');",
+                    "",
+                    "        Ext.getStore('Posts').setData(posts);",
+                    "",
+                    "        self.getPostsList().title = title;",
+                    "",
+                    "        if (feedsStore.find('url', feed.get('url')) < 0){",
+                    "            feedsStore.add(feed);",
+                    "        } ",
+                    "    } else {",
+                    "        Ext.Msg.alert('Error', 'Could not load feed. Check that the URL is a valid feed.');",
+                    "    }",
+                    "});",
+                    ""
                 ]
             },
             "designerId": "4257c28b-bc15-4254-91cd-28cfbe4ff4c4"

@@ -1,16 +1,15 @@
 {
-    "type": "component",
+    "type": "Ext.Component",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "About",
-        "designer|userAlias": "about",
         "html": "<p>About page</p>",
-        "styleHtmlContent": true
+        "styleHtmlContent": true,
+        "designer|userClassName": "About",
+        "designer|userAlias": "about"
     },
-    "id": "ExtBox1-ext-gen9289",
     "designerId": "498dd6ec-4628-4484-877a-b7d33e587689"
 }
