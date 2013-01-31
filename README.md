@@ -25,5 +25,5 @@ Third party API:
 
 ###Project archives:
 
-[TouchFeedViewer-670.xda (build: 670)](https://github.com/downloads/SenchaArchitect/TouchFeedViewer/TouchFeedViewer-670.xda)
+[TouchFeedViewer-670.xda (build: 670)](http://cdn.sencha.com/architect/examples/touchfeedviewer/TouchFeedViewer-670.xda)
 
