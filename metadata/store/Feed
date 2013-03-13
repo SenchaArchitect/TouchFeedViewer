@@ -6,16 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Feed",
-        "designer|userAlias": "feed",
+        "data": "[{\n    url: 'http://siteone.com/rss',\n    title: 'Mock Blog One',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitetwo.com/rss',\n    title: 'Mock Blog Two',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitethree.com/rss',\n    title: 'Mock Blog Three',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}]",
         "model": "Feed",
-        "storeId": "Feed"
+        "storeId": "Feed",
+        "designer|userClassName": "Feed",
+        "designer|userAlias": "feed"
     },
-    "id": "ExtBox1-ext-gen40332",
+    "mockCfgs": [
+        "data"
+    ],
     "designerId": "bca16d92-974d-41c6-b021-ca22bcb31fd8",
     "cn": [
         {
-            "type": "jsonpproxy",
+            "type": "Ext.data.proxy.JsonP",
             "reference": {
                 "name": "proxy",
                 "type": "object"
@@ -28,15 +31,15 @@
             "designerId": "cb3f6054-74a2-4508-8d75-942e45c98035",
             "cn": [
                 {
-                    "type": "jsonreader",
+                    "type": "Ext.data.reader.Json",
                     "reference": {
                         "name": "reader",
                         "type": "object"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader2",
                         "rootProperty": "responseData.feed",
+                        "designer|userClassName": "MyJsonReader2",
                         "record": null,
                         "useSimpleAccessors": null
                     },

@@ -1,21 +1,20 @@
 {
-    "type": "list",
+    "type": "Ext.dataview.List",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "id": "postsList",
         "designer|userClassName": "posts.List",
         "designer|userAlias": "postslist",
-        "id": "postsList",
         "store": "Posts"
     },
-    "id": "ExtBox1-ext-gen9007",
     "designerId": "5d991599-1c18-47cd-aea6-a0fde376a92d",
     "cn": [
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "itemTpl",
                 "type": "object"

@@ -1,5 +1,5 @@
 {
-    "type": "application",
+    "type": "Ext.app.Application",
     "reference": {
         "name": "items",
         "type": "array"
@@ -25,12 +25,11 @@
             "feeds.Add",
             "feeds.List"
         ],
-        "name": "Feed",
         "controllers": [
             "Posts",
             "Feeds"
-        ]
+        ],
+        "name": "Feed"
     },
-    "id": "ExtBox1-ext-gen2227",
     "designerId": "application"
 }

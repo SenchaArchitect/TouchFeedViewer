@@ -6,17 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Feeds",
         "autoLoad": true,
         "autoSync": true,
+        "data": "[{\n    url: 'http://siteone.com/rss',\n    title: 'Mock Blog One',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitetwo.com/rss',\n    title: 'Mock Blog Two',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitethree.com/rss',\n    title: 'Mock Blog Three',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}]",
         "model": "Feed",
-        "storeId": "Feeds"
+        "storeId": "Feeds",
+        "designer|userClassName": "Feeds"
     },
-    "id": "ExtBox1-ext-gen5177",
+    "mockCfgs": [
+        "data"
+    ],
     "designerId": "9cd5d50c-3d15-48ba-a903-a64be6a6ba8f",
     "cn": [
         {
-            "type": "localstorageproxy",
+            "type": "Ext.data.proxy.LocalStorage",
             "reference": {
                 "name": "proxy",
                 "type": "object"
