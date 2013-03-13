@@ -1,20 +1,19 @@
 {
-    "type": "formpanel",
+    "type": "Ext.form.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "styleHtmlContent": true,
         "designer|userClassName": "feeds.Add",
-        "designer|userAlias": "feedsadd",
-        "styleHtmlContent": true
+        "designer|userAlias": "feedsadd"
     },
-    "id": "ExtBox1-ext-gen62861",
     "designerId": "bbf9d344-a904-48fc-9751-b7d983fadc22",
     "cn": [
         {
-            "type": "fieldset",
+            "type": "Ext.form.FieldSet",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -27,15 +26,15 @@
             "designerId": "6e782018-f198-434c-9ce6-8cc2382b6cb6",
             "cn": [
                 {
-                    "type": "urlfield",
+                    "type": "Ext.field.Url",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyUrlField",
                         "id": "urlField",
+                        "designer|userClassName": "MyUrlField",
                         "label": "URL",
                         "placeHolder": "http://example.com"
                     },
@@ -44,21 +43,21 @@
             ]
         },
         {
-            "type": "label",
+            "type": "Ext.Label",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyLabel",
                 "html": "or",
-                "styleHtmlContent": true
+                "styleHtmlContent": true,
+                "designer|userClassName": "MyLabel"
             },
             "designerId": "94c9ff7a-56a7-4624-9786-5688fa61cab5"
         },
         {
-            "type": "fieldset",
+            "type": "Ext.form.FieldSet",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -71,15 +70,15 @@
             "designerId": "ad62516b-ead7-4e1a-91cb-1eb84fac6e88",
             "cn": [
                 {
-                    "type": "textfield",
+                    "type": "Ext.field.Text",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyTextField",
                         "id": "searchField",
+                        "designer|userClassName": "MyTextField",
                         "label": "Keyword"
                     },
                     "designerId": "2bead2c9-7c46-4be0-8fe2-50ae024939f3"
@@ -87,7 +86,7 @@
             ]
         },
         {
-            "type": "container",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -100,7 +99,7 @@
             "designerId": "009819b7-a655-411b-a517-b972c4e5dd2c",
             "cn": [
                 {
-                    "type": "spacer",
+                    "type": "Ext.Spacer",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -112,7 +111,7 @@
                     "designerId": "d7e7065a-ce33-450d-b9b1-0f5824e12ed7"
                 },
                 {
-                    "type": "button",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -120,18 +119,18 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": 1,
-                        "designer|userClassName": "MyButton1",
                         "docked": null,
                         "height": 40,
                         "id": "doneButton",
                         "ui": "confirm",
                         "width": 100,
+                        "designer|userClassName": "MyButton1",
                         "text": "Done"
                     },
                     "designerId": "ba6b3728-0a8c-42f6-97b9-7038e6211249"
                 },
                 {
-                    "type": "spacer",
+                    "type": "Ext.Spacer",
                     "reference": {
                         "name": "items",
                         "type": "array"

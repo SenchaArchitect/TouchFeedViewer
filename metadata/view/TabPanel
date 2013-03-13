@@ -1,5 +1,5 @@
 {
-    "type": "tabpanel",
+    "type": "Ext.tab.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -10,11 +10,10 @@
         "designer|userAlias": "tabpanel",
         "designer|initialView": true
     },
-    "id": "ExtBox1-ext-gen2313",
     "designerId": "8dfa68c3-dcda-46b2-9c70-7c0d6abff151",
     "cn": [
         {
-            "type": "container",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -23,22 +22,22 @@
             "userConfig": {
                 "title": "Posts",
                 "iconCls": "star",
-                "designer|userClassName": "MyContainer",
                 "id": "postsTab",
+                "designer|userClassName": "MyContainer",
                 "layout": "fit"
             },
             "designerId": "712a7b61-24d6-49af-9dc7-d3448f1ae691",
             "cn": [
                 {
-                    "type": "navigationview",
+                    "type": "Ext.navigation.View",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyNavigationView",
                         "id": "postsNav",
+                        "designer|userClassName": "MyNavigationView",
                         "useTitleForBackButtonText": true
                     },
                     "designerId": "aae7777f-e28c-44d5-9fc8-d2dd43221ca2",
@@ -54,10 +53,10 @@
                                 "title": "Post"
                             },
                             "designerId": "3e3d5361-f181-4a58-9a8a-cd211b911b0d",
-                            "masterInstanceId": "ExtBox1-ext-gen9007"
+                            "masterInstanceId": "5d991599-1c18-47cd-aea6-a0fde376a92d"
                         },
                         {
-                            "type": "navigationbar",
+                            "type": "Ext.navigation.Bar",
                             "reference": {
                                 "name": "navigationBar",
                                 "type": "object"
@@ -69,7 +68,7 @@
                             "designerId": "0315c29b-a6d7-42e1-a94c-f8ed83873848",
                             "cn": [
                                 {
-                                    "type": "button",
+                                    "type": "Ext.Button",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
@@ -77,9 +76,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "align": "right",
-                                        "designer|userClassName": "MyButton",
                                         "id": "addButton",
                                         "ui": "action",
+                                        "designer|userClassName": "MyButton",
                                         "iconCls": "add",
                                         "iconMask": true,
                                         "text": ""
@@ -87,15 +86,15 @@
                                     "designerId": "726d3be0-260a-4d99-95f2-d423d869d515"
                                 },
                                 {
-                                    "type": "button",
+                                    "type": "Ext.Button",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyButton2",
                                         "id": "feedsButton",
+                                        "designer|userClassName": "MyButton2",
                                         "text": "Feeds"
                                     },
                                     "designerId": "2ce68ccf-74aa-4a9d-a84b-cf5a5bd1e3d2"
@@ -107,7 +106,7 @@
             ]
         },
         {
-            "type": "container",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -116,8 +115,8 @@
             "userConfig": {
                 "title": "About",
                 "iconCls": "info",
-                "designer|userClassName": "MyContainer1",
                 "id": "aboutTab",
+                "designer|userClassName": "MyContainer1",
                 "layout": "fit"
             },
             "designerId": "8ff1d34a-5fd6-4a95-b78b-05741e6fdbb1",
@@ -130,20 +129,20 @@
                     },
                     "codeClass": null,
                     "designerId": "829d069d-ba63-4f14-abc0-7db9e260878b",
-                    "masterInstanceId": "ExtBox1-ext-gen9289"
+                    "masterInstanceId": "498dd6ec-4628-4484-877a-b7d33e587689"
                 }
             ]
         },
         {
-            "type": "tabbar",
+            "type": "Ext.tab.Bar",
             "reference": {
                 "name": "tabBar",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyTabBar",
-                "docked": "bottom"
+                "docked": "bottom",
+                "designer|userClassName": "MyTabBar"
             },
             "designerId": "ec756633-9d60-4d51-bbf5-a5b0d2cf2341"
         }

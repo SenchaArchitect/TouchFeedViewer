@@ -6,13 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Posts",
-        "designer|userAlias": "posts",
-        "data": null,
+        "data": "[{\n    title: 'Mock Post One',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the first post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Two',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the second post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Three',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the third post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Four',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the fourth post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}]",
         "model": "Post",
-        "storeId": "Posts"
+        "storeId": "Posts",
+        "designer|userClassName": "Posts",
+        "designer|userAlias": "posts"
     },
-    "id": "ExtBox1-ext-gen27667",
+    "mockCfgs": [
+        "data"
+    ],
     "designerId": "f6c25b60-a60b-4ab6-a994-1d34cee875f5",
     "cn": [
         {
@@ -42,7 +44,7 @@
             "designerId": "4a63984a-2b7e-4035-b84d-050c686162a4"
         },
         {
-            "type": "jsonpproxy",
+            "type": "Ext.data.proxy.JsonP",
             "reference": {
                 "name": "proxy",
                 "type": "object"
@@ -55,15 +57,15 @@
             "designerId": "49054a3a-dc77-4b5e-9804-8823e0343a7d",
             "cn": [
                 {
-                    "type": "jsonreader",
+                    "type": "Ext.data.reader.Json",
                     "reference": {
                         "name": "reader",
                         "type": "object"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader",
-                        "rootProperty": "responseData.feed.entries"
+                        "rootProperty": "responseData.feed.entries",
+                        "designer|userClassName": "MyJsonReader"
                     },
                     "designerId": "eb0f29d5-bd5b-40fc-b637-63fbdaa91c69"
                 }
