@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "id": "postsList",
-        "designer|userClassName": "posts.List",
         "designer|userAlias": "postslist",
+        "designer|userClassName": "posts.List",
+        "id": "postsList",
         "store": "Posts"
     },
     "designerId": "5d991599-1c18-47cd-aea6-a0fde376a92d",
@@ -21,12 +21,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "itemTpl",
+                "designer|displayName": "itemTpl",
                 "implHandler": [
                     "{title}",
                     ""
-                ],
-                "designer|displayName": "itemTpl"
+                ]
             },
             "designerId": "efcce8a1-26b6-4f80-b8d8-d60c019dad31"
         }

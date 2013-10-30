@@ -6,11 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Posts",
+            "Feeds"
+        ],
         "models": [
             "Post",
             "Search",
             "Feed"
         ],
+        "name": "Feed",
         "stores": [
             "Posts",
             "Searches",
@@ -24,12 +29,7 @@
             "posts.Story",
             "feeds.Add",
             "feeds.List"
-        ],
-        "controllers": [
-            "Posts",
-            "Feeds"
-        ],
-        "name": "Feed"
+        ]
     },
     "designerId": "application"
 }

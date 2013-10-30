@@ -6,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "feeds",
+        "designer|userClassName": "Feeds",
         "models": [
             "Search"
         ],
@@ -16,9 +18,7 @@
         "views": [
             "feeds.Add",
             "feeds.List"
-        ],
-        "designer|userClassName": "Feeds",
-        "designer|userAlias": "feeds"
+        ]
     },
     "designerId": "4213b342-3f4d-4d3f-9046-05c69ff3af7a",
     "cn": [
@@ -30,7 +30,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "doneButton",
                 "ref": "doneButton",
                 "selector": "#doneButton"
             },
@@ -44,7 +43,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "urlField",
                 "ref": "urlField",
                 "selector": "#urlField"
             },
@@ -58,7 +56,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "searchField",
                 "ref": "searchField",
                 "selector": "#searchField"
             },
@@ -72,7 +69,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onButtonTap",
+                "designer|controlQuery": "feedsadd button",
+                "designer|targetType": "Ext.Button",
                 "fn": "onButtonTap",
                 "implHandler": [
                     "",
@@ -101,9 +99,7 @@
                     "",
                     "}"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "feedsadd button"
+                "name": "tap"
             },
             "designerId": "6e895983-9321-4082-afaa-b99d24a600ff"
         },
@@ -115,7 +111,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "postsNav",
                 "ref": "postsNav",
                 "selector": "#postsNav"
             },
@@ -129,7 +124,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onFeedsListItemTap",
+                "designer|controlQuery": "feedslist",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onFeedsListItemTap",
                 "implHandler": [
                     "Ext.getStore('Feed').loadFeed(record.data.url);",
@@ -137,9 +133,7 @@
                     "",
                     ""
                 ],
-                "name": "itemtap",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "feedslist"
+                "name": "itemtap"
             },
             "designerId": "d3fb453c-1088-49b7-a6e8-eab77b0a90e1"
         },
@@ -151,7 +145,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onFeedsListItemSwipe",
+                "designer|controlQuery": "feedslist",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onFeedsListItemSwipe",
                 "implHandler": [
                     "Ext.Msg.confirm(\"Remove feed\", [\"Are you sure you want to remove \",",
@@ -163,9 +158,7 @@
                     "    }",
                     "});"
                 ],
-                "name": "itemswipe",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "feedslist"
+                "name": "itemswipe"
             },
             "designerId": "287f9232-46c7-4e16-9d77-e24672c0f52c"
         },
@@ -177,7 +170,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "addButton",
                 "ref": "addButton",
                 "selector": "#addButton"
             },
@@ -191,7 +183,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "feedsButton",
                 "ref": "feedsButton",
                 "selector": "#feedsButton"
             },
@@ -205,7 +196,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onAddFeedButtonTap",
+                "designer|controlQuery": "#addButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onAddFeedButtonTap",
                 "implHandler": [
                     "var addFeed = Ext.create('Feed.view.feeds.Add', {",
@@ -214,9 +206,7 @@
                     "",
                     "this.getPostsNav().push(addFeed);"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#addButton"
+                "name": "tap"
             },
             "designerId": "a366c568-0198-4339-974a-81d8fcf1f7a9"
         },
@@ -228,7 +218,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onViewFeedsButtonTap",
+                "designer|controlQuery": "#feedsButton",
+                "designer|targetType": "Ext.Button",
                 "fn": "onViewFeedsButtonTap",
                 "implHandler": [
                     "var feedsList = Ext.create('Feed.view.feeds.List',{",
@@ -237,9 +228,7 @@
                     "feedsList.setStore(Ext.getStore('Feeds'));",
                     "this.getPostsNav().push(feedsList);"
                 ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#feedsButton"
+                "name": "tap"
             },
             "designerId": "48ddee33-3994-45f0-b3cd-58377928f6db"
         },
@@ -251,7 +240,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onNavigationviewActiveItemChange",
+                "designer|controlQuery": "navigationview",
+                "designer|targetType": "Ext.navigation.View",
                 "fn": "onNavigationviewActiveItemChange",
                 "implHandler": [
                     "if (value === this.getPostsList()){",
@@ -264,9 +254,7 @@
                     "}",
                     ""
                 ],
-                "name": "activeitemchange",
-                "designer|targetType": "Ext.navigation.View",
-                "designer|controlQuery": "navigationview"
+                "name": "activeitemchange"
             },
             "designerId": "9e3adc67-e133-4b1f-9ff3-62fbee45af6d"
         },
@@ -278,7 +266,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "postsList",
                 "ref": "postsList",
                 "selector": "#postsList"
             },

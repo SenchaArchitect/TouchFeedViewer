@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Feed",
-        "designer|userAlias": "feed"
+        "designer|userAlias": "feed",
+        "designer|userClassName": "Feed"
     },
     "designerId": "56645fcf-b8ce-42ee-a55d-84138aaed06c",
     "cn": [
@@ -20,8 +20,7 @@
             "codeClass": null,
             "userConfig": {
                 "mapping": "feedUrl",
-                "name": "url",
-                "designer|userClassName": "MyField7"
+                "name": "url"
             },
             "designerId": "6e7041db-6c74-4bd0-bddb-40ad72460741"
         },
@@ -33,8 +32,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField8"
+                "name": "title"
             },
             "designerId": "9db658ff-4b2d-4c04-8f8f-ab5f1590b2d8"
         },
@@ -46,8 +44,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "link",
-                "designer|userClassName": "MyField9"
+                "name": "link"
             },
             "designerId": "fd42fac6-fbe0-4fba-a1c4-3a2619637e38"
         },
@@ -59,8 +56,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "author",
-                "designer|userClassName": "MyField10"
+                "name": "author"
             },
             "designerId": "27936281-bd83-47d1-9de0-aba474dc7412"
         },
@@ -72,8 +68,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "designer|userClassName": "MyField11"
+                "name": "description"
             },
             "designerId": "4d54db1c-1b2f-4084-8338-99a475328b2a"
         },
@@ -86,9 +81,8 @@
             "codeClass": null,
             "userConfig": {
                 "associationKey": "entries",
-                "designer|userClassName": "MyHasManyAssociation",
-                "model": "Post",
                 "filterProperty": null,
+                "model": "Post",
                 "name": "posts",
                 "store": null
             },

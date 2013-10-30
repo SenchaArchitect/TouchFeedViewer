@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Post",
-        "designer|userAlias": "post"
+        "designer|userAlias": "post",
+        "designer|userClassName": "Post"
     },
     "designerId": "c0b797e7-eb24-41b3-bdb9-8bdb6995dc99",
     "cn": [
@@ -19,8 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField"
+                "name": "title"
             },
             "designerId": "d5a2e48a-6fd3-4ceb-a782-938614b5a433"
         },
@@ -32,8 +31,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "author",
-                "designer|userClassName": "MyField1"
+                "name": "author"
             },
             "designerId": "44fce92c-5629-4347-9aa1-3c0885a02706"
         },
@@ -46,8 +44,7 @@
             "codeClass": null,
             "userConfig": {
                 "mapping": "content",
-                "name": "story",
-                "designer|userClassName": "MyField2"
+                "name": "story"
             },
             "designerId": "aedb1714-1ea2-4fdd-9398-05f5a07ff0bd"
         },
@@ -61,8 +58,7 @@
             "userConfig": {
                 "mapping": "publishedDate",
                 "name": "date",
-                "type": "date",
-                "designer|userClassName": "MyField3"
+                "type": "date"
             },
             "designerId": "3ed29110-3a22-4137-b0e7-3ef1ccc3a6e3"
         }

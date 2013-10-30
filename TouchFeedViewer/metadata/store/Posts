@@ -6,11 +6,33 @@
     },
     "codeClass": null,
     "userConfig": {
-        "data": "[{\n    title: 'Mock Post One',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the first post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Two',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the second post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Three',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the third post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}, {\n    title: 'Mock Post Four',\n    author: 'Joe Schmoe',\n    story: 'This is the content of the fourth post.',\n    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   \n}]",
-        "model": "Post",
-        "storeId": "Posts",
+        "data": [
+            "[{",
+            "    title: 'Mock Post One',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the first post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Two',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the second post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Three',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the third post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}, {",
+            "    title: 'Mock Post Four',",
+            "    author: 'Joe Schmoe',",
+            "    story: 'This is the content of the fourth post.',",
+            "    date:\"Thu, 10 Jan 2013 14:41:00 -0800\"   ",
+            "}]"
+        ],
+        "designer|userAlias": "posts",
         "designer|userClassName": "Posts",
-        "designer|userAlias": "posts"
+        "model": "Post",
+        "storeId": "Posts"
     },
     "mockCfgs": [
         "data"
@@ -25,12 +47,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadPosts",
-                "fn": "loadPosts",
                 "designer|params": [
                     "feedUrl",
                     "numPosts"
                 ],
+                "fn": "loadPosts",
                 "implHandler": [
                     "this.load({",
                     "    params:{",
@@ -51,7 +72,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyJsonPProxy",
                 "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
             },
             "designerId": "49054a3a-dc77-4b5e-9804-8823e0343a7d",
@@ -64,8 +84,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "rootProperty": "responseData.feed.entries",
-                        "designer|userClassName": "MyJsonReader"
+                        "rootProperty": "responseData.feed.entries"
                     },
                     "designerId": "eb0f29d5-bd5b-40fc-b637-63fbdaa91c69"
                 }

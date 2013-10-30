@@ -8,10 +8,27 @@
     "userConfig": {
         "autoLoad": true,
         "autoSync": true,
-        "data": "[{\n    url: 'http://siteone.com/rss',\n    title: 'Mock Blog One',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitetwo.com/rss',\n    title: 'Mock Blog Two',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitethree.com/rss',\n    title: 'Mock Blog Three',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}]",
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}]"
+        ],
+        "designer|userClassName": "Feeds",
         "model": "Feed",
-        "storeId": "Feeds",
-        "designer|userClassName": "Feeds"
+        "storeId": "Feeds"
     },
     "mockCfgs": [
         "data"
@@ -26,7 +43,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyLocalStorageProxy",
                 "id": "Feeds"
             },
             "designerId": "e35f6448-1801-42c8-bdcb-ab45b1cd696c"

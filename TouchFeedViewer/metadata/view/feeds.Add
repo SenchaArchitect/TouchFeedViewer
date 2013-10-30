@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "styleHtmlContent": true,
+        "designer|userAlias": "feedsadd",
         "designer|userClassName": "feeds.Add",
-        "designer|userAlias": "feedsadd"
+        "styleHtmlContent": true
     },
     "designerId": "bbf9d344-a904-48fc-9751-b7d983fadc22",
     "cn": [
@@ -20,7 +20,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyFieldSet",
                 "title": "Enter URL"
             },
             "designerId": "6e782018-f198-434c-9ce6-8cc2382b6cb6",
@@ -34,7 +33,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "urlField",
-                        "designer|userClassName": "MyUrlField",
                         "label": "URL",
                         "placeHolder": "http://example.com"
                     },
@@ -51,8 +49,7 @@
             "codeClass": null,
             "userConfig": {
                 "html": "or",
-                "styleHtmlContent": true,
-                "designer|userClassName": "MyLabel"
+                "styleHtmlContent": true
             },
             "designerId": "94c9ff7a-56a7-4624-9786-5688fa61cab5"
         },
@@ -64,7 +61,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyFieldSet1",
                 "title": "Search"
             },
             "designerId": "ad62516b-ead7-4e1a-91cb-1eb84fac6e88",
@@ -78,7 +74,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "searchField",
-                        "designer|userClassName": "MyTextField",
                         "label": "Keyword"
                     },
                     "designerId": "2bead2c9-7c46-4be0-8fe2-50ae024939f3"
@@ -93,7 +88,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyContainer2",
                 "layout": "hbox"
             },
             "designerId": "009819b7-a655-411b-a517-b972c4e5dd2c",
@@ -105,9 +99,6 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MySpacer"
-                    },
                     "designerId": "d7e7065a-ce33-450d-b9b1-0f5824e12ed7"
                 },
                 {
@@ -118,14 +109,13 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": 1,
                         "docked": null,
                         "height": 40,
                         "id": "doneButton",
+                        "layout|flex": 1,
+                        "text": "Done",
                         "ui": "confirm",
-                        "width": 100,
-                        "designer|userClassName": "MyButton1",
-                        "text": "Done"
+                        "width": 100
                     },
                     "designerId": "ba6b3728-0a8c-42f6-97b9-7038e6211249"
                 },
@@ -136,9 +126,6 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MySpacer1"
-                    },
                     "designerId": "504f350d-bac6-4bd4-ad92-9aff4ff5e8a9"
                 }
             ]

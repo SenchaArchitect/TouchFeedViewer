@@ -6,11 +6,28 @@
     },
     "codeClass": null,
     "userConfig": {
-        "data": "[{\n    url: 'http://siteone.com/rss',\n    title: 'Mock Blog One',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitetwo.com/rss',\n    title: 'Mock Blog Two',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}, {\n    url: 'http://sitethree.com/rss',\n    title: 'Mock Blog Three',\n    description: 'A blog with lots of words and stuff.',\n    author: 'The Mock Blog Team' \n}]",
-        "model": "Feed",
-        "storeId": "Feed",
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.',",
+            "    author: 'The Mock Blog Team' ",
+            "}]"
+        ],
+        "designer|userAlias": "feed",
         "designer|userClassName": "Feed",
-        "designer|userAlias": "feed"
+        "model": "Feed",
+        "storeId": "Feed"
     },
     "mockCfgs": [
         "data"
@@ -25,7 +42,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyJsonPProxy2",
                 "url": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0"
             },
             "designerId": "cb3f6054-74a2-4508-8d75-942e45c98035",
@@ -38,9 +54,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "rootProperty": "responseData.feed",
-                        "designer|userClassName": "MyJsonReader2",
                         "record": null,
+                        "rootProperty": "responseData.feed",
                         "useSimpleAccessors": null
                     },
                     "designerId": "107cd083-db99-4d66-91e4-5cad0035de81"
@@ -55,12 +70,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadFeed",
-                "fn": "loadFeed",
                 "designer|params": [
                     "feedUrl",
                     "numPosts"
                 ],
+                "fn": "loadFeed",
                 "implHandler": [
                     "console.log('Loading feed');",
                     "this.load({",

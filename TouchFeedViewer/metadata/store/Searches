@@ -6,11 +6,25 @@
     },
     "codeClass": null,
     "userConfig": {
-        "data": "[{\n    url: 'http://siteone.com/rss',\n    title: 'Mock Blog One',\n    description: 'A blog with lots of words and stuff.'\n}, {\n    url: 'http://sitetwo.com/rss',\n    title: 'Mock Blog Two',\n    description: 'A blog with lots of words and stuff.'\n}, {\n    url: 'http://sitethree.com/rss',\n    title: 'Mock Blog Three',\n    description: 'A blog with lots of words and stuff.'\n}]",
-        "model": "Search",
-        "storeId": "Searches",
+        "data": [
+            "[{",
+            "    url: 'http://siteone.com/rss',",
+            "    title: 'Mock Blog One',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}, {",
+            "    url: 'http://sitetwo.com/rss',",
+            "    title: 'Mock Blog Two',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}, {",
+            "    url: 'http://sitethree.com/rss',",
+            "    title: 'Mock Blog Three',",
+            "    description: 'A blog with lots of words and stuff.'",
+            "}]"
+        ],
+        "designer|userAlias": "search",
         "designer|userClassName": "Searches",
-        "designer|userAlias": "search"
+        "model": "Search",
+        "storeId": "Searches"
     },
     "designerId": "836a9d83-2905-4366-829b-fae819f43a55",
     "cn": [
@@ -22,7 +36,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyJsonPProxy1",
                 "url": "https://ajax.googleapis.com/ajax/services/feed/find?v=1.0"
             },
             "designerId": "c3a457f0-9c23-48e9-bd2c-b1fdd39e1b65",
@@ -35,8 +48,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "rootProperty": "responseData.entries",
-                        "designer|userClassName": "MyJsonReader1"
+                        "rootProperty": "responseData.entries"
                     },
                     "designerId": "a7ca019c-222c-4747-9c09-942498e01e1b"
                 }
@@ -50,11 +62,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "search",
-                "fn": "search",
                 "designer|params": [
                     "keywords"
                 ],
+                "fn": "search",
                 "implHandler": [
                     "    this.load({",
                     "        params:{",

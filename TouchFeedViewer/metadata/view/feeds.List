@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "feeds.List",
         "designer|userAlias": "feedslist",
+        "designer|userClassName": "feeds.List",
         "store": "Searches"
     },
     "designerId": "318e0639-d776-41b1-9e23-01fbacaac81d",
@@ -20,11 +20,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "itemTpl",
+                "designer|displayName": "itemTpl",
                 "implHandler": [
                     "{title}<br /><p style=\"font-size:10pt\">{description}</p>"
-                ],
-                "designer|displayName": "itemTpl"
+                ]
             },
             "designerId": "c0ca1d6a-c3ae-43f1-973b-0120506b026e"
         }

@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "html": "<p>About page</p>",
-        "styleHtmlContent": true,
+        "designer|userAlias": "about",
         "designer|userClassName": "About",
-        "designer|userAlias": "about"
+        "html": "<p>About page</p>",
+        "styleHtmlContent": true
     },
     "designerId": "498dd6ec-4628-4484-877a-b7d33e587689"
 }

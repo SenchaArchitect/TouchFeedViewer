@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "TabPanel",
+        "designer|initialView": true,
         "designer|userAlias": "tabpanel",
-        "designer|initialView": true
+        "designer|userClassName": "TabPanel"
     },
     "designerId": "8dfa68c3-dcda-46b2-9c70-7c0d6abff151",
     "cn": [
@@ -20,11 +20,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Posts",
                 "iconCls": "star",
                 "id": "postsTab",
-                "designer|userClassName": "MyContainer",
-                "layout": "fit"
+                "layout": "fit",
+                "title": "Posts"
             },
             "designerId": "712a7b61-24d6-49af-9dc7-d3448f1ae691",
             "cn": [
@@ -37,7 +36,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "id": "postsNav",
-                        "designer|userClassName": "MyNavigationView",
                         "useTitleForBackButtonText": true
                     },
                     "designerId": "aae7777f-e28c-44d5-9fc8-d2dd43221ca2",
@@ -62,9 +60,6 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyNavigationBar"
-                            },
                             "designerId": "0315c29b-a6d7-42e1-a94c-f8ed83873848",
                             "cn": [
                                 {
@@ -76,12 +71,10 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "align": "right",
-                                        "id": "addButton",
-                                        "ui": "action",
-                                        "designer|userClassName": "MyButton",
                                         "iconCls": "add",
-                                        "iconMask": true,
-                                        "text": ""
+                                        "id": "addButton",
+                                        "text": "",
+                                        "ui": "action"
                                     },
                                     "designerId": "726d3be0-260a-4d99-95f2-d423d869d515"
                                 },
@@ -94,7 +87,6 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "id": "feedsButton",
-                                        "designer|userClassName": "MyButton2",
                                         "text": "Feeds"
                                     },
                                     "designerId": "2ce68ccf-74aa-4a9d-a84b-cf5a5bd1e3d2"
@@ -113,11 +105,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "About",
                 "iconCls": "info",
                 "id": "aboutTab",
-                "designer|userClassName": "MyContainer1",
-                "layout": "fit"
+                "layout": "fit",
+                "title": "About"
             },
             "designerId": "8ff1d34a-5fd6-4a95-b78b-05741e6fdbb1",
             "cn": [
@@ -141,8 +132,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "docked": "bottom",
-                "designer|userClassName": "MyTabBar"
+                "docked": "bottom"
             },
             "designerId": "ec756633-9d60-4d51-bbf5-a5b0d2cf2341"
         }

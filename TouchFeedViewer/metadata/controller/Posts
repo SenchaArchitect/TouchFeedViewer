@@ -6,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userAlias": "posts",
+        "designer|userClassName": "Posts",
         "models": [
             "Post"
         ],
@@ -17,9 +19,7 @@
         "views": [
             "posts.List",
             "posts.Story"
-        ],
-        "designer|userClassName": "Posts",
-        "designer|userAlias": "posts"
+        ]
     },
     "designerId": "481f8a52-b7d9-4a8f-a22d-48a70d155e28",
     "cn": [
@@ -31,7 +31,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "postsNav",
                 "ref": "postsNav",
                 "selector": "#postsNav"
             },
@@ -45,7 +44,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "postsList",
                 "ref": "postsList",
                 "selector": "#postsList"
             },
@@ -59,7 +57,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
                     "this.loadPostsOnFeedLoad();",
@@ -81,11 +78,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "init",
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     ""
                 ]
@@ -100,7 +96,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "loadPostsOnFeedLoad",
                 "fn": "loadPostsOnFeedLoad",
                 "implHandler": [
                     "var self = this;",
@@ -138,14 +133,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onPostsListActivate",
+                "designer|controlQuery": "postslist",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onPostsListActivate",
                 "implHandler": [
                     "this.getApplication().fireEvent('updateNav');"
                 ],
-                "name": "activate",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "postslist"
+                "name": "activate"
             },
             "designerId": "09a681bf-e595-4ec4-9c5a-7f55ebe10c93"
         },
@@ -157,7 +151,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onUpdateNav",
                 "fn": "onUpdateNav",
                 "implHandler": [
                     "var self = this;",
@@ -180,7 +173,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onPostsListItemTap",
+                "designer|controlQuery": "postslist",
+                "designer|targetType": "Ext.dataview.List",
                 "fn": "onPostsListItemTap",
                 "implHandler": [
                     "var story = Ext.create('Feed.view.posts.Story',{",
@@ -189,9 +183,7 @@
                     "story.setData(record.data);",
                     "this.getPostsNav().push(story);"
                 ],
-                "name": "itemtap",
-                "designer|targetType": "Ext.dataview.List",
-                "designer|controlQuery": "postslist"
+                "name": "itemtap"
             },
             "designerId": "a6fc06e1-c607-4d4b-ae9e-ab88ecb2fc93"
         }
