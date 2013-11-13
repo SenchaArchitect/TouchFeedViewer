@@ -18,9 +18,9 @@ Ext.define('Feed.store.Searches', {
     alias: 'store.search',
 
     requires: [
+        'Feed.model.Search',
         'Ext.data.proxy.JsonP',
-        'Ext.data.reader.Json',
-        'Feed.model.Search'
+        'Ext.data.reader.Json'
     ],
 
     config: {

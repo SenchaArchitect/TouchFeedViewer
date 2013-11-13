@@ -17,8 +17,8 @@ Ext.define('Feed.store.Feeds', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'Ext.data.proxy.LocalStorage',
-        'Feed.model.Feed'
+        'Feed.model.Feed',
+        'Ext.data.proxy.LocalStorage'
     ],
 
     config: {

@@ -3,8 +3,8 @@
     "settings": {
         "cmd": {
             "license": "commercial",
-            "cmdVersion": "4.0.1.28",
-            "frameworkVersion": "2.1.1.594"
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
         },
         "urlPrefix": "http://localhost/feed",
         "spacesToIndent": 4,
@@ -36,9 +36,9 @@
         }
     },
     "xdsVersion": "3.0.0",
-    "xdsBuild": 0,
+    "xdsBuild": 1337,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000001,
+    "upgradeVersion": 300000000003,
     "framework": "touch23",
     "viewOrderMap": {
         "view": [
@@ -65,7 +65,7 @@
             "56645fcf-b8ce-42ee-a55d-84138aaed06c"
         ],
         "resource": [
-            "9e06cf19-7df8-4a13-b4d8-9e2366a5a0a5"
+            "8b3b2dcd-9188-4f77-89e1-a0e67bafdea2"
         ],
         "app": [
             "application"

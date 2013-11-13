@@ -1,2 +1,10 @@
 .idea
 .architect
+.sencha
+.sencha_backup
+touch
+build
+build.xml
+bootstrap.js
+bootstrap.json
+app.json

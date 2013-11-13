@@ -18,9 +18,9 @@ Ext.define('Feed.store.Posts', {
     alias: 'store.posts',
 
     requires: [
+        'Feed.model.Post',
         'Ext.data.proxy.JsonP',
-        'Ext.data.reader.Json',
-        'Feed.model.Post'
+        'Ext.data.reader.Json'
     ],
 
     config: {
